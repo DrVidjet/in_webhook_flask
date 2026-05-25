@@ -71,7 +71,7 @@ git config --global --add safe.directory /opt/in_webhook_flask
 ```
 server {
     listen 80;
-    server_name vidjetvpn.com;
+    server_name example.com;
     return 301 https://$host$request_uri;
 }
 
