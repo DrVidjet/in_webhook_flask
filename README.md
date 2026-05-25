@@ -13,6 +13,12 @@ git clone https://github.com/DrVidjet/in_webhook_flask.git
 
 cd in_webhook_flask
 
+cp API.conf.example API.conf
+```
+
+Прописываем target_url для пересылки
+
+```
 python3 -m venv .venv
 
 source .venv/bin/acrivate
