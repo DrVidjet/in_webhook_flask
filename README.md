@@ -63,6 +63,17 @@ sudo systemctl status in_webhook_flask
 git config --global --add safe.directory /opt/in_webhook_flask
 ```
 
+### Получение ssl
+
+```
+dig example.com
+
+certbot --nginx -d example.com
+
+certbot renew --dry-run
+```
+
+
 ### Настройка обратного прокси в примере nginx
 
 
@@ -94,14 +105,4 @@ server {
         return 404;
     }
 }
-```
-
-### Получение ssl
-
-```
-dig example.com
-
-certbot --nginx -d example.com
-
-certbot renew --dry-run
 ```
