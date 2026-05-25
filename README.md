@@ -106,3 +106,11 @@ server {
     }
 }
 ```
+
+```
+ln -s /etc/nginx/sites-available/in_webhook_flask /etc/nginx/sites-enabled/
+
+nginx -t
+
+systemctl reload nginx
+```
